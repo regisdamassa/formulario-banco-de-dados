@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="Clientes.css">
+</head>
+
+<body>
+
+
+
+    <form action="">
+        <fieldset>
+            <h1>Dados do cliente</h1>
+            <div class="info">
+                
+                <div class="n">
+                    <label for="cod">Código</label><br>
+                    <input type="text" id="cod" name="cod" placeholder="Digite o código" required><br>
+                </div>
+                <div class="n">
+                    <label for="nome">Nome completo</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome" required><br>
+                </div>
+                <div class="n">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Digite o email" required>
+                </div>
+                <div class="n">
+                    <label for="tel">Telefone</label><br>
+                    <input type="tel" name="tel" id="tel" placeholder="+55 (00) 00000-0000" required>
+                </div>
+                <div class="n">
+                    <label for="CPF">CPF</label><br>
+                    <input type="text" name="CPF" id="CPF" placeholder="000.000.000-00" required>
+                </div>
+                <div class="n">
+                    <label for="data_nasc">Data de nascimento</label><br>
+                    <input type="date" name="data_nasc" id="data_nasc" placeholder="+55 (00) 00000-0000" required>
+                </div>
+            </div>
+            <hr>
+            <h1>Logradouro do cliente</h1>
+            <div class="endereco">
+                <div class="n">
+                    <label class="defalut-label" for="pais">País de residência &nbsp;&nbsp;&nbsp;</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecione o país</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="eua">Estados Unidos</option>
+                        <option value="portugal">Portugal</option>
+                    </select>
+                </div>
+
+                <div class="n">
+                    <label class="defalut-label" for="estado">Estado &nbsp;&nbsp;&nbsp;</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecione o estado</option>
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SC">SC</option>
+                        <option value="BA">BA</option>
+                    </select>
+                </div>
+
+                <div class="n">
+                    <label for="cep">CEP</label><br>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" required><br>
+                </div>
+
+                <div class="n">
+                    <label for="bairro">Bairro</label><br>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro" required><br>
+                </div>
+
+                <div class="n">
+                    <label for="rua">Rua</label><br>
+                    <input type="text" id="rua" name="rua" placeholder="Digite o nome da rua" required><br>
+                </div>
+
+                <div class="n">
+                    <label for="numero">Nº</label><br>
+                    <input type="text" id="numero" name="numero" placeholder="000" required><br>
+                </div>
+            </div>
+            <button type="submit" id="botao">Enviar</button>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

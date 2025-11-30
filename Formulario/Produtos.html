@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="Produtos.css">
+</head>
+
+<body>
+
+
+
+    <form action="">
+        <fieldset>
+            <h1>Dados do Produto</h1>
+
+            <div class="info">
+                <div class="n">
+                    <label for="cod">Código</label><br>
+                    <input type="text" id="cod" name="cod" placeholder="Digite o código" required><br>
+                </div>
+                <div class="n">
+                    <label for="nome">Nome do produto</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome" required><br>
+                </div>
+                <div class="n">
+                    <label for="quantidade">Quantidade</label><br>
+                    <input type="text" name="quantidade" id="quantidade" placeholder="0000" required>
+                </div>
+                <div class="n">
+                    <label for="preco">Preço</label><br>
+                    <input type="text" name="preco" id="preco" placeholder="R$00,00" required>
+                </div>
+                <div class="n">
+                    <label for="foto">Foto do produto</label><br>
+                    <input type="file" name="foto" id="foto" placeholder="foto" required>
+                </div>
+
+            </div>
+            <div class="n">
+                <label for="descricao">Descrição do produto</label><br>
+                <input type="textarea" name="descricao" id="descricao" placeholder="Digite a descrição" required>
+            </div>
+           <button id="botao" type="submit">Enviar</button>
+            
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

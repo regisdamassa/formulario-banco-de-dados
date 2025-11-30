@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #141414, #2c2c2c 3%, #333333);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow-y: hidden;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90vh;
+}
+
+fieldset {
+    border: none;
+    margin-top: 10vh;
+    border-radius: 10px;
+    padding: 3vh;
+    box-shadow: 7px 7px 10px #141414, -5px -5px 10px rgb(59, 59, 59);
+}
+
+h1 {
+    text-shadow: 3px 3px 5px#141414;
+    margin-bottom: -3%;
+}
+
+img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 10vw;
+    box-shadow: 2px 2px 4px #0f0f0f, -2px -2px 4px rgb(68, 68, 68);
+}
+hr {
+    border: 2px solid #333333;
+    width: 90%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px #0f0f0f, -2px -2px 4px rgb(68, 68, 68);
+}
+
+.info_pedido, .info_pagamento, .relacionamentos {
+    align-items: end;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 4vh;
+    margin-bottom: 4vh;
+    margin-top:6%;
+}
+.info_pedido {
+    margin-top: 7%;
+}
+
+.n input, select {
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border: none;
+    border-radius: 7px;
+    transition: .5s ease;
+    box-shadow: 3px 3px 5px #141414;
+    outline: none;
+    padding: .2vw .1vw;
+    width: 10vw;
+}
+select {
+    padding-right: .5vw; 
+    padding-left: .5vw;
+    margin-left: -.5vw;
+}
+label {
+    bottom: 1vh;
+    position: relative;
+    text-shadow: 3px 3px 5px#141414;
+}
+.defalut-label {
+    bottom: 0;
+    position: relative;
+}
+
+.info input::placeholder {
+    color: #8d8d8d;
+    left: .2vw;
+    position: relative;
+}
+
+
+.n input:focus {
+    outline: none;
+    background-color: rgb(99, 99, 99);
+}
+.n input[type="date"]:placeholder-shown {
+    border: none;
+}
+
+.n input[type="text"]:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid red;
+    animation: balanco .5s ease;
+    animation-iteration-count: 2;
+}
+
+@keyframes balanco {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-5px);
+    }
+
+    66% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.n input:valid:not(:focus):not(:placeholder-shown),
+select:valid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid lightgreen;
+}
+#cod {
+    width: 7vw;
+}
+#nome {
+    width: 15vw;
+}
+
+#quantidade {
+    width: 5vw;
+}
+
+#valor {
+    width: 5vw;
+}
+
+#foto {
+    width: 10vw;
+    aspect-ratio: 1 / 1;
+}
+
+button {
+    color: white;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    padding: 2vh;
+    transition: .5s ease;
+    box-shadow: 3px 3px 5px #141414;
+    text-shadow: 3px 3px 5px #141414;
+    border: none;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+form:valid #botao:hover {
+    transform: scale(1.02);
+    background-color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+form:invalid #botao:hover {
+    animation: balanco1 .5s ease;
+    animation-iteration-count: infinite;
+    cursor: not-allowed;
+}
+
+@keyframes balanco1 {
+    0% {
+        transform: translateX(0);
+        border: 2px solid red;
+    }
+
+    33% {
+        transform: translateX(-5px);
+        border: 2px solid red;
+    }
+
+    66% {
+        transform: translateX(5px);
+        border: 2px solid red;
+    }
+
+    100% {
+        transform: translateX(0);
+        border: 2px solid red;
+    }
+}
